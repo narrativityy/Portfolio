@@ -43,6 +43,7 @@ header .nav-btn {
 	border: none;
 	outline: none;
 	color: var(--textColor);
+	max-width: 0;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
@@ -56,6 +57,8 @@ nav {
 
 @media only screen and (max-width: 900px) {
 	header .nav-btn {
+		max-height: 100%;
+		max-width: 100%;
 		visibility: visible;
 		opacity: 1;
 	}
@@ -107,6 +110,5 @@ nav {
 }
 
 #navbar-container {
-	border: var(--mainNavbarColor);
-	border-radius: 25px;
+	overflow: hidden;
 }
