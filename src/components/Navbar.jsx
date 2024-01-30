@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <div>
+    <div id='navbar-container' className='m-2 mb-0 shadow rounded'>
         <header>
             <img id='logo' src={logo} alt="website logo" />
             <nav ref={navRef}>
