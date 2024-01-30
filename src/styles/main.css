@@ -15,10 +15,6 @@
 	--textColor: #FFF6E0;
 }
 
-#main {
-	background-color: var(--mainColor);
-}
-
 header {
 	display: flex;
 	align-items: center;
@@ -94,3 +90,16 @@ nav {
 	}
 }
 
+#main {
+	background-color: var(--mainColor);
+}
+
+#logo {
+	height: 70%;
+	border-radius: 25%;
+}
+
+#headshot {
+	height: 70%;
+	border-radius: 50%;
+}

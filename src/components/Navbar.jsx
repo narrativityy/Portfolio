@@ -1,6 +1,8 @@
 import { useRef } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import "../styles/main.css"
+import { Link } from 'react-router-dom'
+import logo from "../assets/logo.jpg"
 
 const Navbar = () => {
   const navRef = useRef(null)
@@ -12,12 +14,11 @@ const Navbar = () => {
   return (
     <div>
         <header>
-            <h3>Jake Crowley</h3>
+            <img id='logo' src={logo} alt="website logo" />
             <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">My Work</a>
-                <a href="/#">Blog</a>
-                <a href="/#">About Me</a>
+                <Link to={"/"}>Home</Link>
+                <Link to={"/work"}>My Work</Link>
+                <Link to={"/about"} href="/#">About Me</Link>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />
                 </button>
@@ -25,7 +26,7 @@ const Navbar = () => {
             <button className='nav-btn' onClick={showNavbar}>
                 <FaBars />
             </button>
-        </header>    
+        </header>
     </div>
   )
 }
