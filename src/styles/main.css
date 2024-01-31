@@ -12,7 +12,6 @@
 	--mainNavbarColor: #040D12;
 	--mainNavbarColorLight: #61677A;
 	--secondaryColor: #D8D9DA;
-	--textColor: #FFF6E0;
 }
 
 header {
@@ -22,13 +21,13 @@ header {
 	height: 80px;
 	padding: 0 2rem;
 	font-size: 1.5rem;
-	background-color: var(--mainNavbarColor);
-	color: var(--textColor);
+	background-color: var(--mainColor);
+	color: white;
 }
 
 nav a {
 	margin: 0 1rem;
-	color: var(--textColor);
+	color: white;
 	text-decoration: none;
 }
 
@@ -36,13 +35,17 @@ nav a:hover {
 	color: var(--secondaryColor);
 }
 
+nav button:hover {
+	color: var(--secondaryColor);
+}
+
 header .nav-btn {
-	padding: 5px;
+	padding: 0px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
+	color: white;
 	max-width: 0;
 	visibility: hidden;
 	opacity: 0;
@@ -74,7 +77,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainNavbarColor);
+		background-color: var(--mainColor);
 		transition: 1s;
 	}
 
@@ -99,7 +102,6 @@ nav {
 
 #logo {
 	height: 70%;
-	border-radius: 25%;
 }
 
 #headshot {
