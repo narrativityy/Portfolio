@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <div id='navbar-container' className='m-2 mb-0'>
+    <div id='navbar-container' className='mt-2 mb-0'>
         <header>
             <img className='shadow rounded' id='logo' src={logo} alt="website logo" />
             <nav ref={navRef}>

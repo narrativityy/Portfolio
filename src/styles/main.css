@@ -7,6 +7,10 @@
 	font-family: "Titillium Web", sans-serif;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 :root {
 	--mainColor: #272829;
 	--mainNavbarColor: #040D12;
@@ -95,6 +99,50 @@ nav {
 		font-size: 1.5rem;
 	}
 }
+
+.top-to-btm{
+	position: relative;
+  }
+  .icon-position{
+	position: fixed;
+	bottom: 40px;
+	right: 25px;
+	z-index: 20;
+  }
+  .icon-style{
+	background-color: var(--mainNavbarColor);
+	padding: 7px;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	color: #fff;
+	cursor: grab;
+	transition: all .5s ease-in-out;
+  }
+  .icon-style:hover{
+	background: #fff;
+	color: var(--mainNavbarColor);
+  }
+  .icon-style i{
+	border: 2px solid var(--mainNavbarColor);
+  }
+  @keyframes movebtn {
+	0%{
+	  transform: translateY(0px);
+	}
+	25%{
+	  transform: translateY(20px);
+	}
+	50%{
+	  transform: translateY(0px);
+	}
+	75%{
+	  transform: translateY(-20px);
+	}
+	100%{
+	  transform: translateY(0px);
+	}
+  }
 
 #main {
 	background-color: var(--mainColor);
