@@ -1,14 +1,14 @@
 import { useRef } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import "../styles/main.css"
-import { Link } from 'react-router-dom'
 import logo from "../assets/logo.jpg"
 
-const Navbar = () => {
+const Navbar = (props) => {
+
   const navRef = useRef(null)
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav")``
+    navRef.current.classList.toggle("responsive_nav")
   }
 
   return (
@@ -16,14 +16,14 @@ const Navbar = () => {
         <header>
             <img className='shadow rounded' id='logo' src={logo} alt="website logo" />
             <nav ref={navRef}>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/work"}>My Work</Link>
-                <Link to={"/about"} href="/#">About Me</Link>
-                <button className='nav-btn nav-close-btn shadow' onClick={showNavbar}>
+                <h2 onClick={() => props.props.aboutScrollDown()} href="/#">About Me</h2>
+                <h2 onClick={() => props.props.workScrollDown()}>My Work</h2>
+                <h2 onClick={() => props.props.contactScrollDown()}>Contact Me</h2>
+                <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />
                 </button>
             </nav>
-            <button className='nav-btn shadow' onClick={showNavbar}>
+            <button className='nav-btn' onClick={showNavbar}>
                 <FaBars />
             </button>
         </header>
