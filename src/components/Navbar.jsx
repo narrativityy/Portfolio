@@ -13,7 +13,7 @@ const Navbar = (props) => {
 
   return (
     <div id='navbar-container' className='mt-2 mb-0'>
-        <header>
+        <header className=''>
             <img className='shadow rounded' id='logo' src={logo} alt="website logo" />
             <nav ref={navRef}>
                 <h2 onClick={() => props.props.aboutScrollDown()} href="/#">About Me</h2>

@@ -1,4 +1,6 @@
-import { forwardRef, useRef, useEffect } from 'react'
+import { useRef } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import'./output.css'
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe'
@@ -35,11 +37,19 @@ function App() {
 
   return (
     <div id='body' className='text-slate-100'>
-      <Navbar props={{aboutScrollDown, workScrollDown, contactScrollDown}} />
+      <ScrollAnimation animateIn='fadeIn' initiallyVisible={true}>
+        <Navbar props={{aboutScrollDown, workScrollDown, contactScrollDown}} />
+      </ScrollAnimation>
       <ScrollToTop />
-      <AboutMe ref={aboutRef} />
-      <MyWork ref={workRef} />
-      <ContactMe ref={contactRef} />
+      <ScrollAnimation animateIn="fadeIn" offset={0} duration={.5}>
+        <AboutMe ref={aboutRef} />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" offset={0} duration={.5}>
+        <MyWork ref={workRef} />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={.5}>
+        <ContactMe ref={contactRef} />
+      </ScrollAnimation>
     </div>
   )
 }

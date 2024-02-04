@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from 'react'
+import React, { forwardRef } from 'react'
 import headshot from '../assets/headshot.jpg'
 
 const AboutMe = forwardRef((props, ref) => {
@@ -7,12 +7,12 @@ const AboutMe = forwardRef((props, ref) => {
         <div className="home text-center mx-4 py-3">
             <div className=" my-3 d-flex justify-content-center align-items-center">
                 <div className="me-3 text-start">
-                    <h2 className="fs-1 fw-bold">Jake Crowley</h2>
+                    <h2 className="fs-1 fw-bold header">Jake Crowley</h2>
                     <p className="mt-2 fw-lighter">Jake is a full-stack engineer who solves complex problems. He attended Coding Dojo and has an Associate Degree in Computer Science</p>
                 </div>
                 <img className="shadow" id='headshot' src={headshot} height="50px" alt="Personal Portrait" />
             </div>
-            <h1 className="fs-2 fw-bold text-start">About Me</h1>
+            <h1 className="fs-2 fw-bold text-start header">About Me</h1>
             <div className="my-4 d-flex justify-content-center align-items-center">
                 <div className="row align-items-start">
                     <div className="col me-1">
