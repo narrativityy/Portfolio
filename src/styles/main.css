@@ -18,6 +18,10 @@ html {
   --secondaryColor: #d8d9da;
 }
 
+p {
+	line-height: 1.5;
+}
+
 header {
   padding: 0;
   display: flex;
