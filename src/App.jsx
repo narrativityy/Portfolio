@@ -3,9 +3,9 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import "./output.css";
 import Navbar from "./components/Navbar";
-import AboutMe from "./components/AboutMe";
+import MyStory from "./components/MyStory";
 import MyWork from "./components/MyWork";
-import ContactMe from "./components/ContactMe";
+import MyLinks from "./components/MyLinks";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -39,13 +39,13 @@ function App() {
       <Navbar props={{ aboutScrollDown, workScrollDown, contactScrollDown }} />
       <ScrollToTop />
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={100}>
-        <AboutMe ref={aboutRef} />
+        <MyStory ref={aboutRef} />
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={100}>
         <MyWork ref={workRef} />
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={100}>
-        <ContactMe ref={contactRef} />
+        <MyLinks ref={contactRef} />
       </ScrollAnimation>
     </div>
   );

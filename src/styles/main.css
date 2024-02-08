@@ -113,6 +113,10 @@ nav {
     cursor: pointer;
     font-size: 1.5rem;
   }
+
+  .margin{
+    margin: 0 1.5rem;
+  }
 }
 
 .home {
@@ -167,6 +171,16 @@ nav {
   }
 }
 
+.margin {
+	margin: auto;
+}
+
+@media only screen and (max-width: 653px) {
+	.margin{
+		margin: 0 1.5rem;
+	}
+}
+
 #main {
   background-color: var(--mainColor);
 }
@@ -184,4 +198,8 @@ nav {
 
 #navbar-container {
   overflow: hidden;
+}
+
+#myLinks {
+	margin-bottom: 5%;
 }
