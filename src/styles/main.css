@@ -19,6 +19,7 @@ html {
 }
 
 p {
+	text-align: justify;
 	line-height: 1.5;
 }
 
@@ -202,4 +203,12 @@ nav {
 
 #myLinks {
 	margin-bottom: 5%;
+}
+
+#myLinks a {
+	text-decoration: underline;
+}
+
+#myLinks a:hover {
+	color: var(--secondaryColor);
 }
