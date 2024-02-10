@@ -29,7 +29,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
   font-size: 1.5rem;
   background-color: var(--mainColor);
@@ -69,6 +69,22 @@ header div,
 nav {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 654px) {
+	header {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+		max-width: 750px;
+		margin: 0 1.5rem;
+		font-size: 1.5rem;
+		background-color: var(--mainColor);
+		color: white;
+	  }
+
 }
 
 @media only screen and (max-width: 653px) {
@@ -121,7 +137,7 @@ nav {
 }
 
 .home {
-  max-width: 600px;
+  max-width: 750px;
 }
 
 .header:hover {
@@ -176,9 +192,54 @@ nav {
 	margin: auto;
 }
 
-@media only screen and (max-width: 653px) {
+.projectContainer {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.projectImage {
+	width: 370px;
+}
+
+.projectDescription {
+	padding: 10px;
+	color: black;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--secondaryColor);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.projectDescription:hover {
+	opacity: 1;
+}
+
+.projectTitle {
+	margin-bottom: 10px;
+	font-size: larger;
+}
+
+.projectSubtitle {
+	font-weight: 300;
+}
+
+.hidden {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+@media only screen and (max-width: 800px) {
 	.margin{
 		margin: 0 1.5rem;
+	}
+	.projectImage {
+		width: 100%;
+	}
+	.projectContainer {
+		margin-bottom: 5%;
 	}
 }
 

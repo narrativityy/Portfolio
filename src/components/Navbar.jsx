@@ -20,11 +20,11 @@ const Navbar = (props) => {
           alt="website logo"
         />
         <nav ref={navRef}>
-          <h2 onClick={() => props.props.aboutScrollDown()} href="/#">
+          <h2 onClick={() => props.props.aboutScrollDown()}>
             My Story
           </h2>
           <h2 onClick={() => props.props.workScrollDown()}>My Work</h2>
-          <h2 onClick={() => props.props.contactScrollDown()}>Contact Me</h2>
+          <h2 onClick={() => props.props.contactScrollDown()}>My Links</h2>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
